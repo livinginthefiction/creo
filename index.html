@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- section 1 -->
+    <section class="flex items-center justify-center h-screen bg-white">
+        <img src="./img/logo.png" alt="Centered Image" class="w-4/5 max-w-full h-auto">
+    </section>
+    
+    <!-- section 2 -->
+    <section class="flex items-center justify-center h-screen bg-black text-white">
+        <h2 class="text-200px md:text-4xl">WHAT IS CREO?</h2>
+    </section>
+    
+    <!-- section 3 -->
+    <section class="relative flex flex-col items-center justify-center h-screen bg-white text-black">
+        <h2 class="text-76px md:text-2xl mb-8">We are not another 360 agency</h2>
+        <svg class="absolute left-1/2 transform -translate-x-1/2 top-1/2 h-1/2 w-1 bg-black mt-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 100">
+            <rect width="4" height="100" fill="black" />
+        </svg>
+    </section>
+
+    <!-- section 4 -->
+    <section id="section-4" class="relative flex items-center justify-center h-screen bg-black text-white">
+        <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 bottom-1/2 h-2/5 w-1 bg-white mb-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 100">
+            <rect width="4" height="100" fill="white" />
+        </svg>
+        <h2 class="text-76px md:text-2xl mt-8 z-10 bg-black">But rather a mindset <span class="highlightX hidden">&nbsp;</span></h2>
+        <span class="highlightY hidden">&nbsp;</span>
+    </section>
+
+    <!-- section 5 -->
+    <section id="section-5" class="flex items-center justify-center h-screen bg-white text-black relative">
+        <span class="highlight-invertY hidden">&nbsp;</span>
+        <h2 class="text-76px md:text-2xl bg-white z-10"><span class="highlight-invertX hidden">&nbsp;</span> That will challenge you</h2>
+    </section>
+
+    <!-- section 6 -->
+    <section id="section-6" class="flex items-center justify-center h-screen bg-white text-black">
+        <h2 id="animate-text" class="text-76px md:text-2xl">To <span id="think-text">think</span></h2>
+    </section>
+
+    <!-- section 7 -->
+    <section class="relative flex items-center justify-center h-screen bg-white text-black text-center">
+        <div>
+            <h2 class="text-33px md:text-base">Because</h2>
+        </br>
+            <h2 class="text-76px md:text-2xl">Assimilating</h2>
+        </div>
+        <svg class="absolute left-1/2 transform -translate-x-1/2 top-1/2 h-1/2 w-20 bg-black mt-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
+            <rect width="120" height="4" fill="black" />
+        </svg>
+        
+    </section>
+
+    <!-- section 8 -->
+    <section class="relative flex items-center justify-center h-screen bg-white text-black text-center">
+        <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 bottom-1/2 h-1/5 w-20 bg-black mb-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 100">
+            <rect width="4" height="100" fill="black" />
+        </svg>
+
+        <div>
+            <h2 class="text-76px">Leads to</h2>
+        </br>
+    </br>
+            <div class="flex flex-col items-center text-left rotate-90" style="line-height: 1.2;">
+                <h2 class="text-128px ">Growth</h2>
+            <!-- </br> -->
+                <h2 class="text-108px ">Thinking</h2>
+            </div>
+        </div>
+        <!-- <svg class="absolute left-1/2 transform -translate-x-1/2 top-1/2 h-1/8 w-20 bg-black mt-20 bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100">
+            <rect width="120" height="4" fill="black" />
+        </svg> -->
+    </section>
+    
+    <!-- section 9 -->
+    <section class="relative flex flex-col items-center justify-center h-screen bg-white text-black text-center">
+        <svg id="footer-band" class="absolute top-0 left-1/2 transform -translate-x-1/2 bottom-1/2 h-2/5 w-20 bg-black mb-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 100">
+            <rect width="4" height="100" fill="black" />
+        </svg>
+        <h2 id="text-animate" class="text-76px">
+            <span id="animate-hide">Growth requires</span> 
+            Rethinking 
+            <span id="animate-type"></span> 
+        </h2>
+        <div id="menu-container" class="absolute top-3/4 transform -translate-y-1/2 hidden">
+            <h2 id="menu" class="text-33px">Explore <i class="fa-solid fa-bars"></i></h2>
+        </div>
+    </section>
+
+    <footer class="flex items-center justify-between py-4 bg-white text-gray-800 border-t border-gray-300">
+        <i class="text-33px fa-solid fa-chevron-up text-727272 ml-8"></i>
+        <p class="text-16px text-center text-727272">2024 © Creo Global. All Rights Reserved</p>
+        <i class="text-33px fas fa-share-alt text-727272 mr-8"></i>
+    </footer>   
+
+    <script src="script.js"></script>
+</body>
+</html>

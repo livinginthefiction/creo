@@ -1,0 +1,142 @@
+/* style.css */
+
+@font-face {
+    font-family: 'HelveticaNeueLTStdBold';
+    src: url('HelveticaNeueLTStd-Bd.woff2') format('woff2'),
+         url('HelveticaNeueLTStd-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'HelveticaNeueLTStdBold', sans-serif;
+}
+
+.highlightX{
+    background-color: #fffffe;
+    width: 50%;
+    height: 0.25rem;
+    display: block;
+    margin-top: 3rem;
+    transform: translateX(100%);
+}
+
+.highlightY{
+    background-color: #fffffe;
+    width: 0.25rem;
+    height: 55%;
+    margin: 0;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+.highlight-invertX{
+    background-color: #000;
+    width: 50%;
+    height: 0.30rem;
+    display: block;
+    margin-bottom: 3.5rem;
+}
+
+.highlight-invertY{
+    background-color: #000;
+    width: 0.45rem;
+    height: 50%;
+    margin: 0;
+    transform: rotate(15deg);
+    position: absolute;
+    top: -1%;
+    left: 48.2%;
+}
+
+
+@media screen and (max-width: 1024px){
+    .highlightY {
+        left: 58%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .highlightY {
+        left: 62%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .highlightY {
+        left: 66%;
+    }
+    .highlight-invertY {
+        left: 42%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .highlight-invertY {
+        left: 38%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .highlight-invertY {
+        left: 33%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .text-250px {
+        font-size: 250px;
+    }
+    .text-76px {
+        font-size: 76px;
+    }
+    .text-33px {
+        font-size: 33px;
+    }
+    .text-108px {
+        font-size: 108px;
+    }
+    .text-128px {
+        font-size: 128px;
+    }
+    .text-16px {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-250px {
+        font-size: 4rem; /* 64px for smaller devices */
+    }
+    .text-76px {
+        font-size: 2rem; /* 32px for smaller devices */
+        line-height: 1.75rem;
+    }
+    .text-33px {
+        font-size: 1rem; /* 16px for smaller devices */
+    }
+    .text-108px {
+        font-size: 2.5rem; /* 56px for smaller devices */
+    }
+    .text-128px {
+        font-size: 3rem; /* 48px for smaller devices */
+    }
+    .text-16px {
+        font-size: 1rem;
+    }
+}
+
+.text-727272 {
+    color: #727272;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+#menu-container.hidden {
+    display: none;
+}
